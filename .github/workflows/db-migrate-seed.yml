@@ -1,0 +1,41 @@
+name: DB Migrate & Seed (Supabase)
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - 'server/prisma/**'
+      - '.github/workflows/db-migrate-seed.yml'
+
+jobs:
+  migrate-seed:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    env:
+      # Map GitHub Secrets to env vars Prisma expects
+      DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
+      DIRECT_URL: ${{ secrets.SUPABASE_DIRECT_URL }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'server/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma Client
+        run: npx prisma generate
+
+      - name: Prisma Migrate Deploy (Supabase)
+        run: npx prisma migrate deploy
+
+      - name: Seed base data
+        run: npx prisma db seed

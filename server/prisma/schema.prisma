@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Status {
+  OK
+  IKKE_OK
+}
+
+model Classroom {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  inspections Inspection[]
+}
+
+model Inspector {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  inspections Inspection[]
+}
+
+model Inspection {
+  id                Int       @id @default(autoincrement())
+  inspectionDate    DateTime
+  createdAt         DateTime  @default(now())
+  classroomId       Int
+  inspectorId       Int
+  projectorStatus   Status
+  dustFilterStatus  Status
+  speakerStatus     Status
+  hdmiStatus        Status
+  chargerStatus     Status
+  projectorComment  String?
+  lampHours         String?
+  lampLifeRemaining String?
+  speakerComment    String?
+  hdmiComment       String?
+  chargerComment    String?
+  generalComment    String?
+  classroom         Classroom @relation(fields: [classroomId], references: [id])
+  inspector         Inspector @relation(fields: [inspectorId], references: [id])
+}

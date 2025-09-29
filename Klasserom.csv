@@ -1,0 +1,28 @@
+classroomName;projectorStatus;projectorComment;dustFilterStatus;lampHours;lampLifeRemaining;speakerStatus;speakerComment; hdmiStatus;hdmiComment;chargerStatus;chargerComment;generalComment;inspectionDate;inspectorName
+R13;OK;;Kontrollert OK;4659;12;OK;;OK;dårlig hdmi overgang;OK;;;19.08.2025;Ida Klem Henriksen
+Personalrom;OK;;Kontrollert OK;;;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R01;OK;;Kontrollert OK;;;Ikke OK;bass på høyre høytaller må justeres;OK;;Ikke OK;gammel lader type, trenger ny;rydde opp i kabler og kanskje fjerne printer;19.08.2025;Ida Klem Henriksen
+R24;OK;;Kontrollert OK;;;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R02;OK;;Kontrollert OK;3348;17;Ikke OK;feste ledning til vegg;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R11;OK;;Kontrollert OK;;45;OK;bass på høyre høytaller må justeres;OK;;OK;gammel lader type, trenger ny;;19.08.2025;Ida Klem Henriksen
+R26;OK;;Kontrollert OK;2047;49;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R25;OK;;Kontrollert OK;1814;62;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+Lille kantine;OK;;Kontrollert OK;5047;1;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+Auditoriet;OK;;Kontrollert OK;2852;43;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R21;OK;;Kontrollert OK;480;86;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+Kjemi;OK;;Kontrollert OK;3193;21;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R04;OK;;Kontrollert OK;2728;86;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R14;OK;;Kontrollert OK;906;75;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R27;OK;;Kontrollert OK;3585;49;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+Naturfag;OK;;Kontrollert OK;;84;OK;;OK;;OK;;Knagg til kabel, kobling mellom lys og knappepanel(kjøtestykke);19.08.2025;Ida Klem Henriksen
+R05;OK;;Kontrollert OK;1207;;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R12;OK;;Kontrollert OK;260;94;OK;;OK;dårlig hdmi overgang;OK;;;22.08.2025;Ida Klem Henriksen
+Fysikk;OK;;Kontrollert OK;1935;52;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R03;OK;;Kontrollert OK;1070;80;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R23;OK;;Kontrollert OK;599;86;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R22;OK;;Kontrollert OK;599;86;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+G29;OK;;Kontrollert OK;;;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+Biologi;OK;;Kontrollert OK;;82;OK;;OK;;OK;;Knagg til kabel;19.08.2025;Ida Klem Henriksen
+G28;OK;;Kontrollert OK;;;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R15;OK;;Kontrollert OK;1488;70;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
+R16;OK;;Kontrollert OK;3896;11;OK;;OK;;OK;;;19.08.2025;Ida Klem Henriksen
