@@ -42,3 +42,5 @@ jobs:
 
       - name: Import historical inspections (Klasserom.csv)
         run: node scripts/import_inspections.js "../Klasserom.csv"
+
+# no-op change to trigger workflow run
