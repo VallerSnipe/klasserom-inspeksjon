@@ -39,3 +39,6 @@ jobs:
 
       - name: Seed base data
         run: npx prisma db seed
+
+      - name: Import historical inspections (Klasserom.csv)
+        run: node scripts/import_inspections.js "../Klasserom.csv"
