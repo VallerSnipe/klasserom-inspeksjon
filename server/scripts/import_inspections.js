@@ -206,8 +206,30 @@ async function main() {
       create: { name: inspectorName },
     });
 
-    await prisma.inspection.create({
-      data: {
+    // Upsert to avoid duplicates based on (classroomId, inspectorId, inspectionDate)
+    await prisma.inspection.upsert({
+      where: {
+        classroomId_inspectorId_inspectionDate: {
+          classroomId: classroom.id,
+          inspectorId: inspector.id,
+          inspectionDate,
+        },
+      },
+      update: {
+        projectorStatus,
+        dustFilterStatus,
+        speakerStatus,
+        hdmiStatus,
+        chargerStatus,
+        projectorComment,
+        lampHours,
+        lampLifeRemaining,
+        speakerComment,
+        hdmiComment,
+        chargerComment,
+        generalComment,
+      },
+      create: {
         inspectionDate,
         classroomId: classroom.id,
         inspectorId: inspector.id,

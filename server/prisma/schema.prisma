@@ -45,4 +45,6 @@ model Inspection {
   generalComment    String?
   classroom         Classroom @relation(fields: [classroomId], references: [id])
   inspector         Inspector @relation(fields: [inspectorId], references: [id])
+
+  @@unique([classroomId, inspectorId, inspectionDate])
 }
